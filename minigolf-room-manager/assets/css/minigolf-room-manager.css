@@ -1,0 +1,46 @@
+.mg-scoreboard-wrapper {
+    overflow-x: auto;
+}
+
+.mg-scoreboard {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background: #1b1c1f;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.mg-scoreboard th,
+.mg-scoreboard td {
+    padding: 8px 10px;
+    border: 1px solid #2e2f34;
+    text-align: center;
+}
+
+.mg-scoreboard th {
+    background: linear-gradient(135deg, #353945, #1b1c1f);
+}
+
+@media (prefers-color-scheme: light) {
+    .mg-scoreboard {
+        background: #f7f7f9;
+        color: #222;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .mg-scoreboard th {
+        background: linear-gradient(135deg, #e0e0e5, #c0c0ca);
+    }
+    .mg-scoreboard td,
+    .mg-scoreboard th {
+        border-color: #d0d0d5;
+    }
+}
+
+@media (max-width: 480px) {
+    .mg-scoreboard th,
+    .mg-scoreboard td {
+        padding: 6px 4px;
+    }
+}
